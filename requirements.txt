@@ -1,0 +1,17 @@
+# Requirements for PDF Chatbot RAG System
+# Generated automatically
+
+chromadb==1.4.0
+flashrank==0.2.10
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-core==0.3.63
+langchain-text-splitters==0.3.8
+ollama==0.6.1
+pypdf==6.6.0
+rank_bm25==0.2.2
+
+# FastAPI dependencies
+fastapi
+uvicorn[standard]
+

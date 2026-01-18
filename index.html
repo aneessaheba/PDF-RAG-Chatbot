@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF RAG Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PDF RAG Chatbot</h1>
+
+    <!-- Upload Section -->
+    <div class="section">
+        <h2>Upload PDF</h2>
+        <input type="file" id="fileInput" accept=".pdf">
+        <button onclick="uploadPDF()">Upload</button>
+        <div id="uploadStatus"></div>
+    </div>
+
+    <!-- Query Section -->
+    <div class="section">
+        <h2>Ask Question</h2>
+        <input type="text" id="questionInput" placeholder="Enter your question...">
+        <button onclick="askQuestion()">Ask</button>
+        <div id="queryResult"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

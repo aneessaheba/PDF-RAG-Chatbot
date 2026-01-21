@@ -28,3 +28,33 @@ Thumbs.db
 # API Keys (IMPORTANT!)
 *.key
 config.py
+
+# Step 1: Create .gitignore (to exclude venv, chroma_db, etc.)
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Data files (can be regenerated)
+chroma_db/
+graph_data/
+evaluation_results/
+uploaded_pdfs/
+
+# Large model files
+*.pkl
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+EOF
+
